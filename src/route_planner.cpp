@@ -79,7 +79,8 @@ RouteModel::Node *RoutePlanner::NextNode() {
     std::sort(open_list.begin(), open_list.end(), CompareValues);
 
     // note: en.cppreference.co/algorithm/sort for lambda expression
-    //useful to force an error in the auto type, so the compiler can throw the error and explicitly show the type of auto:
+    // useful to force an error in the auto type, so the compiler can throw the error and explicitly show the type of auto
+    // I used this example to explain an answear on the Knowlegde forum.
     // std::sort(open_list.begin(), open_list.end(), [](const auto& a, const auto& b){
     //     int c = a;
     //     return true;
